@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func openAD(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "grayscene")
+        
+        if let newVC=vc{
+            self.modalTransitionStyle = .crossDissolve
+            self.present(newVC, animated: true, completion: nil)
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
