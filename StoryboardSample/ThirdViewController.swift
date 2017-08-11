@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ThirdViewController.swift
 //  StoryboardSample
 //
 //  Created by ktds 22 on 2017. 8. 11..
@@ -8,20 +8,8 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
-    @IBOutlet weak var mySwitch: UISwitch!
-    @IBAction func nextSceen(_ sender: Any) {
-        
-        if mySwitch.isOn{
-            self.performSegue(withIdentifier: "second", sender: self)
-        } else{
-            self.performSegue(withIdentifier: "third", sender: self)
-        }
-        
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
